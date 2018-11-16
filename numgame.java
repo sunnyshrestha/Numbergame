@@ -49,8 +49,8 @@ public class numgame {
 	private static int randomNum(int min, int max) {
 		
 		Random rand = new Random();		
-	/*	int number = rand.nextInt(max);		
-		int mid = min+number;
+		int number = rand.nextInt(max);		
+		/*int mid = min+number;
 		
 		if (number < min && max < mid) {	 
 			number = randomNum(min, max);	
