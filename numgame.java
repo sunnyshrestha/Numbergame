@@ -49,7 +49,7 @@ public class numgame {
 	private static int randomNum(int min, int max) {
 		
 		Random rand = new Random();		
-		int number = rand.nextInt(max);		
+	/*	int number = rand.nextInt(max);		
 		int mid = min+number;
 		
 		if (number < min && max < mid) {	 
@@ -61,6 +61,14 @@ public class numgame {
 			
 		} else {			
 		 number = min+ number;
+	}
+	*/
+	
+		if (number <= min) {
+			number = randomNum(min, max);
+		}
+		else {
+			number = number;
 		}
 	return number;	
 	}
